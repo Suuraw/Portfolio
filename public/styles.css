@@ -400,5 +400,8 @@ footer {
         transform: translate(-2px, 1px) skew(-1deg);
     }
 }
-/* black box to cover initial transition state */
+/* Add space project heading and content */
 
+.heading{
+    padding-bottom: 15px;
+}
