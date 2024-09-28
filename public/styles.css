@@ -181,6 +181,47 @@ section h2 {
     transform: scale(1.05);
 }
 
+/* Project view hover */
+.project-card {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease;
+    max-width: 400px; /* initial width */
+}
+
+.project-card img, .project-card h4 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    background-color: #f0f0f0;
+    width: 100vw; /* full viewport width on hover */
+    height: 100vh; /* expand to full height on hover */
+    overflow-y: auto; /* enable vertical scrolling */
+    border: 2px solid #333;
+    color: #111
+}
+
+.project-card:hover img, .project-card:hover h4 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.project-card h3, .project-card p {
+    text-align: center;
+}
+
+body {
+    overflow-x: hidden; /* prevent horizontal scroll on the body */
+}
+
 /* Contact section styles */
 .contact-links {
     display: flex;
